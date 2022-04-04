@@ -9,7 +9,8 @@ trigger:
 pool:
   name: default
   demands:
-  - Agent.Name -equals UPPAS090 # equals check for Agent.Name UPPAS090
+  - isForEditRepo -equals true # equals check for isForEditRepo is true
+  - Agent.Name -equals UPPAS090 # equals check for Agent.Name is UPPAS090
 
 steps:
 - task: Gradle@2
