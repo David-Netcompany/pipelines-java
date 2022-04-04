@@ -7,7 +7,8 @@ trigger:
 - development
 
 pool:
-  name: UPPAS090
+  name: default
+  demands: isForEditRepo
 
 steps:
 - task: Gradle@2
