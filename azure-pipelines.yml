@@ -8,7 +8,8 @@ trigger:
 
 pool:
   name: default
-  demands: isForEditRepo
+  demands:
+  - Agent.Name -equals UPPAS090 # equals check for Agent.Name UPPAS090
 
 steps:
 - task: Gradle@2
