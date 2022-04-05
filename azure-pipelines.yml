@@ -7,10 +7,7 @@ trigger:
 - development
 
 pool:
-  name: default
-  demands:
-  - isForEditRepo -equals true # equals check for isForEditRepo is true
-  - Agent.Name -equals UPPAS090 # equals check for Agent.Name is UPPAS090
+  name: edit
 
 steps:
 - task: Gradle@2
